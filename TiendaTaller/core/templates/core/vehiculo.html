@@ -27,7 +27,7 @@
             <!-- <input type="reset" class="btn btn-primary btnwidth" id="id_nuevo" value="Nuevo"> -->
             <a class="btn btn-success btnwidth" href="{% url 'vehiculo' 'ins' -1 %}">Nuevo</a>
             {% if id != '-1' %}
-            <a class="btn btn-danger btnwidth" href="{% url 'vehiculo' 'del' id %}">Eliminar</a>
+            <!--<a class="btn btn-danger btnwidth" href="{% url 'vehiculo' 'del' id %}">Eliminar</a>-->
             {% endif %}
             <a class="btn btn-info btnwidth" href="{% url 'home' %}">Inicio</a>
             {% if mesg %}
