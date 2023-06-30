@@ -4,6 +4,30 @@ from .forms import VehiculoForm
 
 # Create your views here.
 
+def home (request):
+     return render (request, "core/index.htm1")
+
+def contacto (request):
+     return render (request, "core/contacto.html")
+
+def iniciosesion(request):
+     return render (request, "core/iniciosesion.htm")
+
+def nosotros (request):
+     return render (request, "core/nosotros.html")
+
+def pag_caja(request):
+     return render (request, "core/pag_caja.html*")
+
+def pag_electri(request):
+     return render (request, "core/pag_electri.html")
+
+def pag_suspe(request):
+     return render (request, "core/pag_suspe.html")
+
+def registro(request):
+     return render (request, "core/registro.html")
+
 def home(request):
     return render(request, "core/home.html")
 
@@ -48,6 +72,7 @@ def vehiculo(request, action, id):
 
     data["list"] = Vehiculo.objects.all().order_by('patente')
     return render(request, "core/vehiculo.html", data)
+
 
 def poblar_bd(request):
     Vehiculo.objects.all().delete()
